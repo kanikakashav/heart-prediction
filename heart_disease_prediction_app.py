@@ -52,7 +52,7 @@ st.markdown("""
 
 # loading the saved models
 
-heart_disease_model = pickle.load(open('heart_prediction_model.sav', 'rb'))
+heart_disease_model = pickle.load(('heart_prediction_model.sav', 'rb'))
 
 # page title
 st.title('❤️ Heart Disease Prediction using ML')
