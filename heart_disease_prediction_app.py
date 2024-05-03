@@ -48,11 +48,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # getting the working directory of the main.py
-working_dir = os.path.dirname(os.path.abspath(__file__))
+#working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
 
-heart_disease_model = pickle.load(open(f'{working_dir}/heart_prediction_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_prediction_model.sav', 'rb'))
 
 # page title
 st.title('❤️ Heart Disease Prediction using ML')
